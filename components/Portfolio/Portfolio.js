@@ -76,7 +76,7 @@ const Portfolio = () => (
         bgImage="/img/undraw/undraw_developer_activity_bv83.svg"
         bgClasses="bg-blue-300"
         tags={['#dreaming', '#coding', '#neveGiveUp']}
-        description={' '}
+        description={<></>}
       />
     </div>
     <div className="absolute inset-x-0 bottom-0 pb-10">

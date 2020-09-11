@@ -6,36 +6,36 @@ import Technology from './Technology';
 const Technologies = ({ bgImage }) => (
   <div
     id="technologies"
-    className="h-screen relative w-full py-10 text-white bg-fixed bg-cover align-middle"
+    className="min-h-screen max-h-full relative w-full py-10 text-white bg-fixed bg-cover align-middle"
     style={{ backgroundImage: `url(${bgImage})` }}
   >
     <h1 className="text-4xl text-white text-center mb-10">Main technologies</h1>
-    <div className="grid mt-20 xl:grid-cols-6 lg:grid-cols-4 md:grid-cols-3 justify-items-center h-auto bg-gray-900 py-32">
-      <p className="grid-span-1">
+    <div className="grid mt-20 xl:grid-cols-6 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 justify-items-center h-auto bg-gray-900 py-32">
+      <div className="grid-span-1">
         <Technology name="Laravel" bgImage="/img/technologies/laravel.png" />
-      </p>
-      <p className="grid-span-1">
+      </div>
+      <div className="grid-span-1">
         <Technology name="React" bgImage="/img/technologies/react.png" />
-      </p>
-      <p className="grid-span-1">
+      </div>
+      <div className="grid-span-1">
         <Technology name="MySQL" bgImage="/img/technologies/mysql.png" />
-      </p>
-      <p className="grid-span-1">
+      </div>
+      <div className="grid-span-1">
         <Technology
           name="Node JS"
           bgImage="/img/technologies/node.svg"
           bgClasses=""
         />
-      </p>
-      <p className="grid-span-1">
+      </div>
+      <div className="grid-span-1">
         <Technology
           name="October CMS"
           bgImage="/img/technologies/octobercms.png"
         />
-      </p>
-      <p className="grid-span-1">
+      </div>
+      <div className="grid-span-1">
         <Technology name="Docker" bgImage="/img/technologies/docker.png" />
-      </p>
+      </div>
     </div>
     <div className="absolute text-white inset-x-0 bottom-0 pb-10">
       <a href="#contact">
