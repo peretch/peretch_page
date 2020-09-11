@@ -9,7 +9,7 @@ const Technology = ({ name, bgImage, bgClasses }) => (
       style={{ backgroundImage: `url(${bgImage})` }}
       title={name}
     />
-    <p className="text-gray-700 text-lg">{name}</p>
+    <p className="text-gray-200 text-lg">{name}</p>
   </div>
 );
 

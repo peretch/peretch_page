@@ -10,7 +10,7 @@ const Technologies = ({ bgImage }) => (
     style={{ backgroundImage: `url(${bgImage})` }}
   >
     <h1 className="text-4xl text-white text-center mb-10">Main technologies</h1>
-    <div className="grid mt-20 xl:grid-cols-6 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 justify-items-center h-auto bg-gray-900 py-32">
+    <div className="grid mt-20 xl:grid-cols-6 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 justify-items-center h-auto bg-gray-900 py-32 bg-opacity-75">
       <div className="grid-span-1">
         <Technology name="Laravel" bgImage="/img/technologies/laravel.png" />
       </div>
