@@ -5,6 +5,7 @@ import Contact from '../components/Contact/Contact';
 import Partners from '../components/Partners/Partners';
 import Portfolio from '../components/Portfolio/Portfolio';
 import Technologies from '../components/Technologies/Technologies';
+// import Profile from '../components/Profile/Profile';
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
       <div className="bg-gray-900 text-white">
         <Navbar />
         <About />
+        {/* <Profile /> */}
         <Portfolio />
         <Partners />
         <Technologies bgImage="img/unsplash/reza-namdari-ZgZsKFnSbEA-unsplash.jpg" />
