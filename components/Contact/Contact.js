@@ -15,6 +15,7 @@ const Contact = ({ bgImage }) => (
     </div>
 
     <div className="h-auto text-white lg:px-16 sm:px-10 py-10">
+      <h2 className="text-3xl mb-8">Contact me</h2>
       <form className="w-full max-w-lg">
         <div className="flex flex-wrap -mx-3 mb-6">
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
