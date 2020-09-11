@@ -1,13 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Project = ({ bgImage, bgClasses, title, description, tags }) => (
+const Project = ({
+  bgImage,
+  bgClasses,
+  title,
+  description,
+  tags,
+  externalLink,
+}) => (
   <div className="max-w-sm overflow-hidden grid-span-1 shadow-lg bg-white m-8 rounded-lg">
-    <a
-      href="https://github.com/peretch/facturacion"
-      target="_blank"
-      rel="noreferrer"
-    >
+    <a href={externalLink} target="_blank" rel="noreferrer">
       <img className={`w-full h-48 ${bgClasses}`} src={bgImage} alt="" />
     </a>
     <div className="px-6 py-4">
@@ -35,6 +38,7 @@ Project.propTypes = {
   title: PropTypes.string,
   description: PropTypes.object,
   tags: PropTypes.array,
+  externalLink: PropTypes.string,
 };
 
 export default Project;

@@ -14,6 +14,7 @@ const Portfolio = () => (
         bgImage="/img/projects/facturation_system.png"
         bgClasses="bg-green-900 object-contain"
         tags={['#laravel', '#jquery', '#mysql']}
+        externalLink="https://github.com/peretch/facturacion"
         description={
           <>
             This is a facturation system, developed with Laravel 5.6 and MySql
@@ -35,6 +36,7 @@ const Portfolio = () => (
         bgImage="/img/projects/space_runner.webp"
         bgClasses="object-contain bg-black"
         tags={['#unity3D', '#C#']}
+        externalLink="https://play.google.com/store/apps/details?id=com.SebastianPerezEtchandy.games.SpaceRunner&hl=es_UY"
         description={
           <>
             This game was released in 2014. This is one of my first projects
@@ -55,13 +57,14 @@ const Portfolio = () => (
         bgImage="/img/peretch.svg"
         bgClasses="bg-black"
         tags={['#Laravel', '#React', '#Express', '#NEXTjs']}
+        externalLink="https://github.com/peretch"
         description={
           <>
             This is a facturation system, developed with Laravel 5.6 and MySql
             5.7. It was made in 2017 and was uploaded free to{' '}
             <a
               className="text-blue-500"
-              href="https://github.com/peretch/facturacion"
+              href="https://github.com/peretch"
               target="_blank"
               rel="noreferrer"
             >
@@ -75,7 +78,8 @@ const Portfolio = () => (
         title="And there is more comming soon..."
         bgImage="/img/undraw/undraw_developer_activity_bv83.svg"
         bgClasses="bg-blue-300"
-        tags={['#dreaming', '#coding', '#neveGiveUp']}
+        tags={['#dreamBig', '#coding', '#neveGiveUp!']}
+        externalLink="#"
         description={<></>}
       />
     </div>
