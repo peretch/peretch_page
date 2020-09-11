@@ -75,7 +75,7 @@ const Portfolio = () => (
         title="And there is more comming soon..."
         bgImage="/img/undraw/undraw_developer_activity_bv83.svg"
         bgClasses="bg-blue-300"
-        tags={['#deamBig', '#neveGiveUp', '#followingMyHart']}
+        tags={['#dreaming', '#coding', '#neveGiveUp']}
         description={' '}
       />
     </div>
