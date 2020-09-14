@@ -1,7 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const About = () => (
-  <div className="h-screen relative lg:px-16 sm:px-10 py-10 text-center">
+const About = ({ sectionName, nextSection }) => (
+  <div
+    id={sectionName}
+    className="h-screen relative lg:px-16 sm:px-10 py-10 text-center"
+  >
     <div className="grid grid-cols-2 py-20">
       <div className="grid-span-1 px-5">
         <div className="row-span-1 col-span-2 py-4">
@@ -29,7 +33,7 @@ const About = () => (
       </div>
     </div>
     <div className="absolute inset-x-0 bottom-0 pb-32">
-      <a href="#portfolio">
+      <a href={`#${nextSection}`}>
         <svg
           className="animate-bounce text-white h-12 w-full"
           fill="none"
@@ -45,5 +49,10 @@ const About = () => (
     </div>
   </div>
 );
+
+About.propTypes = {
+  sectionName: PropTypes.string,
+  nextSection: PropTypes.string,
+};
 
 export default About;

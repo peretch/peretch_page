@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 
 import Technology from './Technology';
 
-const Technologies = ({ bgImage }) => (
+const Technologies = ({ sectionName, nextSection, bgImage }) => (
   <div
-    id="technologies"
+    id={sectionName}
     className="min-h-screen max-h-full relative w-full py-10 text-white bg-fixed bg-cover align-middle"
     style={{ backgroundImage: `url(${bgImage})` }}
   >
@@ -38,7 +38,7 @@ const Technologies = ({ bgImage }) => (
       </div>
     </div>
     <div className="absolute text-white inset-x-0 bottom-0 pb-10">
-      <a href="#contact">
+      <a href={`#${nextSection}`}>
         <svg
           className="animate-bounce text-white h-12 w-full"
           fill="none"
@@ -56,6 +56,8 @@ const Technologies = ({ bgImage }) => (
 );
 
 Technologies.propTypes = {
+  sectionName: PropTypes.string,
+  nextSection: PropTypes.string,
   bgImage: PropTypes.string,
 };
 

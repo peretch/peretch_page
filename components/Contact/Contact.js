@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Social from '../Profile/Social';
 
-const Contact = ({ bgImage }) => (
-  <div id="contact" className="h-screen relative">
+const Contact = ({ sectionName, nextSection, bgImage }) => (
+  <div id={sectionName} className="h-screen relative">
     <div
       className="h-auto lg:px-32 sm:px-24 py-24 text-white bg-contain bg-fixed bg-center align-middle"
       style={{ backgroundImage: `url(${bgImage})` }}
@@ -171,6 +171,8 @@ const Contact = ({ bgImage }) => (
 
 Contact.propTypes = {
   bgImage: PropTypes.string,
+  sectionName: PropTypes.string,
+  nextSection: PropTypes.string,
 };
 
 export default Contact;

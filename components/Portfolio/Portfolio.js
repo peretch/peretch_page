@@ -1,10 +1,10 @@
 import React from 'react';
-
+import PropTypes from 'prop-types';
 import Project from './Project';
 
-const Portfolio = () => (
+const Portfolio = ({ sectionName, nextSection }) => (
   <div
-    id="portfolio"
+    id={sectionName}
     className="min-h-screen max-h-full relative lg:px-16 sm:px-10 py-10 bg-peretch-1 fill-current bg-black"
   >
     <h1 className="text-4xl text-gray-900 text-center mb-10">Portfolio</h1>
@@ -84,7 +84,7 @@ const Portfolio = () => (
       />
     </div>
     <div className="absolute inset-x-0 bottom-0 pb-10">
-      <a href="#partners">
+      <a href={`#${nextSection}`}>
         <svg
           className="animate-bounce text-gray-900 h-12 w-full"
           fill="none"
@@ -100,5 +100,10 @@ const Portfolio = () => (
     </div>
   </div>
 );
+
+Portfolio.propTypes = {
+  sectionName: PropTypes.string,
+  nextSection: PropTypes.string,
+};
 
 export default Portfolio;

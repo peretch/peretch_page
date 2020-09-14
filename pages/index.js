@@ -2,10 +2,10 @@ import Head from 'next/head';
 import Navbar from '../components/Navbar/Navbar';
 import About from '../components/About/About';
 import Contact from '../components/Contact/Contact';
-import Partners from '../components/Partners/Partners';
+// import Partners from '../components/Partners/Partners';
 import Portfolio from '../components/Portfolio/Portfolio';
 import Technologies from '../components/Technologies/Technologies';
-// import Profile from '../components/Profile/Profile';
+import Profile from '../components/Profile/Profile';
 
 const Index = () => (
   <div>
@@ -21,12 +21,19 @@ const Index = () => (
     </Head>
     <div className="bg-gray-900 text-white">
       <Navbar />
-      <About />
-      {/* <Profile /> */}
-      <Portfolio />
-      <Partners />
-      <Technologies bgImage="img/unsplash/reza-namdari-ZgZsKFnSbEA-unsplash.jpg" />
-      <Contact bgImage="img/unsplash/kt-PxWXhc4xWeg-unsplash.jpg" />
+      <About sectionName="about" nextSection="profile" />
+      <Profile sectionName="profile" nextSection="technologies" />
+      <Technologies
+        sectionName="technologies"
+        bgImage="img/unsplash/reza-namdari-ZgZsKFnSbEA-unsplash.jpg"
+        nextSection="portfolio"
+      />
+      <Portfolio sectionName="portfolio" nextSection="contact" />
+      <Contact
+        sectionName="contact"
+        bgImage="img/unsplash/kt-PxWXhc4xWeg-unsplash.jpg"
+        nextSection=""
+      />
     </div>
   </div>
 );

@@ -1,9 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Social from './Social';
 
-const Profile = () => (
+const Profile = ({ sectionName, nextSection }) => (
   <div
-    id="profile"
+    id={sectionName}
     className="min-h-screen max-h-full relative lg:px-16 sm:px-10 py-10 fill-current bg-peretch-2 text-white"
   >
     <h1 className="text-4xl text-center mb-10">Profile</h1>
@@ -32,7 +33,7 @@ const Profile = () => (
       bgClasses=""
     />
     <div className="absolute inset-x-0 bottom-0 pb-12">
-      <a href="#portfolio">
+      <a href={`#${nextSection}`}>
         <svg
           className="animate-bounce text-white h-12 w-full"
           fill="none"
@@ -48,5 +49,10 @@ const Profile = () => (
     </div>
   </div>
 );
+
+Profile.propTypes = {
+  sectionName: PropTypes.string,
+  nextSection: PropTypes.string,
+};
 
 export default Profile;
