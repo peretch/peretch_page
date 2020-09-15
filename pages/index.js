@@ -6,6 +6,7 @@ import Contact from '../components/Contact/Contact';
 import Portfolio from '../components/Portfolio/Portfolio';
 import Technologies from '../components/Technologies/Technologies';
 import Profile from '../components/Profile/Profile';
+import Skills from '../components/Skills/Skills';
 
 const Index = () => (
   <div>
@@ -22,7 +23,8 @@ const Index = () => (
     <div className="bg-gray-900 text-white">
       <Navbar />
       <About sectionName="about" nextSection="profile" />
-      <Profile sectionName="profile" nextSection="technologies" />
+      <Profile sectionName="profile" nextSection="skills" />
+      <Skills sectionName="skills" nextSection="technologies" />
       <Technologies
         sectionName="technologies"
         bgImage="img/unsplash/reza-namdari-ZgZsKFnSbEA-unsplash.jpg"

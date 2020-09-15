@@ -3,50 +3,37 @@ import PropTypes from 'prop-types';
 import Social from './Social';
 
 const Profile = ({ sectionName, nextSection }) => (
-  <div
-    id={sectionName}
-    className="min-h-screen max-h-full relative lg:px-16 sm:px-10 py-10 fill-current bg-peretch-2 text-white"
-  >
-    <h1 className="text-4xl text-center mb-10">Profile</h1>
-    <Social
-      name="GitHub"
-      externalLink="https://github.com/peretch"
-      bgImage="/img/social/github.svg"
-      bgClasses=""
-    />
-    <Social
-      name="Linkedin"
-      externalLink="https://www.linkedin.com/in/sebasti%C3%A1n-p%C3%A9rez-etchandy-98489612b/"
-      bgImage="/img/social/linkedin.svg"
-      bgClasses=""
-    />
-    <Social
-      name="Stack Overflow"
-      externalLink="https://stackoverflow.com/users/9301236/sebasti%c3%a1n-p%c3%a9rez"
-      bgImage="/img/social/stackoverflow.svg"
-      bgClasses="bg-white"
-    />
-    <Social
-      name="sebastian@peretch.com"
-      externalLink="sebastian@peretch.com"
-      bgImage="/img/social/mail-with-circle.svg"
-      bgClasses=""
-    />
-    <div className="absolute inset-x-0 bottom-0 pb-12">
-      <a href={`#${nextSection}`}>
-        <svg
-          className="animate-bounce text-white h-12 w-full"
-          fill="none"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="2"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-        </svg>
-      </a>
+  <div id={sectionName} className="py-12 bg-peretch-1">
+    <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 mb-8">
+      <div className="lg:text-center">
+        <p className="text-base leading-6 text-indigo-600 font-semibold tracking-wide uppercase">
+          About me
+        </p>
+        <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
+          Hi there!
+        </h3>
+        <div className="flex items-center justify-center">
+          <div className="h-56 w-56 rounded-full bg-gray-200 m-2" />
+        </div>
+        <p className="mt-4 max-w-2xl text-xl leading-7 text-gray-500 lg:mx-auto">
+          Hi!, my name is Sebastián, I'm a full stack developer from Montevideo,
+          Uruguay. I work as a developer since 2017.
+        </p>
+      </div>
     </div>
+    <a href={`#${nextSection}`}>
+      <svg
+        className="animate-bounce text-gray-900 h-12 w-full"
+        fill="none"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+      </svg>
+    </a>
   </div>
 );
 
