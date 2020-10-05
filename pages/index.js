@@ -1,29 +1,19 @@
 import Head from 'next/head';
 import Navbar from '../components/Navbar/Navbar';
-import About from '../components/About/About';
+import Banner from '../components/Banner/Banner';
 import Contact from '../components/Contact/Contact';
 // import Partners from '../components/Partners/Partners';
 import Portfolio from '../components/Portfolio/Portfolio';
 import Technologies from '../components/Technologies/Technologies';
-import Profile from '../components/Profile/Profile';
+import About from '../components/About/About';
 import Skills from '../components/Skills/Skills';
 
 const Index = () => (
-  <div>
-    <Head>
-      <title>Peretch</title>
-      <link rel="icon" href="/favicon.ico" />
-      <link href="css/tailwind.css" rel="stylesheet" />
-      <link rel="stylesheet" href="css/owlcarousel/dist/owl.carousel.min.js" />
-      <link
-        rel="stylesheet"
-        href="css/owlcarousel/dist/assets/owl.theme.default.min.css"
-      />
-    </Head>
-    <div className="bg-gray-900 text-white">
+  <>
+    <div className="bg-gray-900 text-white h-screen">
       <Navbar />
-      <About sectionName="about" nextSection="profile" />
-      <Profile sectionName="profile" nextSection="skills" />
+      <Banner sectionName="home" nextSection="about" />
+      <About sectionName="about" nextSection="skills" />
       <Skills sectionName="skills" nextSection="technologies" />
       <Technologies
         sectionName="technologies"
@@ -37,7 +27,7 @@ const Index = () => (
         nextSection=""
       />
     </div>
-  </div>
+  </>
 );
 
 export default Index;

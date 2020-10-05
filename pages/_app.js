@@ -12,19 +12,18 @@ const App = ({ Component, pageProps }) => (
       <title>Peretch</title>
       <link rel="icon" href="/favicon.ico" />
       <link href="css/tailwind.css" rel="stylesheet" />
-      <link rel="stylesheet" href="css/owlcarousel/dist/owl.carousel.min.js" />
-      <link
-        rel="stylesheet"
-        href="css/owlcarousel/dist/assets/owl.theme.default.min.css"
-      />
     </Head>
     <Component {...pageProps} />
   </Store>
 );
 
 App.propTypes = {
-  Component: PropTypes.object,
+  Component: PropTypes.func,
   pageProps: PropTypes.object,
+};
+
+Store.propTypes = {
+  children: PropTypes.array,
 };
 
 export default App;

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const NavbarLink = ({ href, text }) => (
   <a
     href={href}
-    className="block mt-4 md:inline-block md:mt-0 text-gray-100 hover:text-white mr-4"
+    className="block mt-4 md:inline-block md:mt-0 text-gray-200 mr-4 text-base hover:text-blue-200 hover:shadow-xl px-6 sm:px-2"
   >
     {text}
   </a>

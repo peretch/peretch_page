@@ -2,15 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Skills = ({ sectionName, nextSection }) => (
-  <div id={sectionName} className="py-12 text-white">
+  <div id={sectionName} className="py-4 text-white bg-gray-900">
     <div className="mt-10 lg:px-32 sm:px-24 mb-10">
       <div className="lg:text-center">
         <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl sm:leading-10">
           Skills
         </h3>
       </div>
-      <ul className="md:grid md:grid-cols-3 md:col-gap-8 md:row-gap-10 mt-8">
-        <li>
+      <ul className="md:grid md:grid-cols-3 md:col-gap-8 md:row-gap-10 my-16">
+        <li className="mt-10 md:mt-6">
           <div className="flex">
             <div className="flex-shrink-0">
               <div className="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
@@ -42,7 +42,7 @@ const Skills = ({ sectionName, nextSection }) => (
             </div>
           </div>
         </li>
-        <li className="mt-10 md:mt-0">
+        <li className="mt-10 md:mt-6">
           <div className="flex">
             <div className="flex-shrink-0">
               <div className="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
@@ -73,7 +73,7 @@ const Skills = ({ sectionName, nextSection }) => (
             </div>
           </div>
         </li>
-        <li className="mt-10 md:mt-0">
+        <li className="mt-10 md:mt-6">
           <div className="flex">
             <div className="flex-shrink-0">
               <div className="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
@@ -104,7 +104,7 @@ const Skills = ({ sectionName, nextSection }) => (
             </div>
           </div>
         </li>
-        <li className="mt-10 md:mt-0">
+        <li className="mt-10 md:mt-6">
           <div className="flex">
             <div className="flex-shrink-0">
               <div className="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
@@ -136,7 +136,7 @@ const Skills = ({ sectionName, nextSection }) => (
             </div>
           </div>
         </li>
-        <li className="mt-10 md:mt-0">
+        <li className="mt-10 md:mt-6">
           <div className="flex">
             <div className="flex-shrink-0">
               <div className="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
@@ -168,7 +168,7 @@ const Skills = ({ sectionName, nextSection }) => (
             </div>
           </div>
         </li>
-        <li className="mt-10 md:mt-0">
+        <li className="mt-10 md:mt-6">
           <div className="flex">
             <div className="flex-shrink-0">
               <div className="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
@@ -190,7 +190,7 @@ const Skills = ({ sectionName, nextSection }) => (
             </div>
             <div className="ml-4">
               <h4 className="text-lg leading-6 font-medium text-white">
-                Pasion for what I do
+                Passion for coding
               </h4>
               <p className="mt-2 text-base leading-6 text-gray-500">
                 One of the most important of my skills is my pation to every
@@ -201,19 +201,21 @@ const Skills = ({ sectionName, nextSection }) => (
         </li>
       </ul>
     </div>
-    <a href={`#${nextSection}`}>
-      <svg
-        className="animate-bounce text-white h-12 w-full"
-        fill="none"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="2"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-      </svg>
-    </a>
+    <div className="pt-4">
+      <a href={`#${nextSection}`}>
+        <svg
+          className="animate-bounce text-white h-12 w-full"
+          fill="none"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+        </svg>
+      </a>
+    </div>
   </div>
 );
 
