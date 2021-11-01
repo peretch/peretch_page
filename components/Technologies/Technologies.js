@@ -12,15 +12,6 @@ const Technologies = ({ sectionName, nextSection, bgImage }) => (
     <h1 className="text-4xl text-white text-center mb-10">Main technologies</h1>
     <div className="grid mt-20 xl:grid-cols-6 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 justify-items-center h-auto bg-gray-900 py-32 bg-opacity-75">
       <div className="grid-span-1">
-        <Technology name="Laravel" bgImage="/img/technologies/laravel.png" />
-      </div>
-      <div className="grid-span-1">
-        <Technology name="React" bgImage="/img/technologies/react.png" />
-      </div>
-      <div className="grid-span-1">
-        <Technology name="MySQL" bgImage="/img/technologies/mysql.png" />
-      </div>
-      <div className="grid-span-1">
         <Technology
           name="Node JS"
           bgImage="/img/technologies/node.svg"
@@ -28,13 +19,22 @@ const Technologies = ({ sectionName, nextSection, bgImage }) => (
         />
       </div>
       <div className="grid-span-1">
+        <Technology name="React" bgImage="/img/technologies/react.png" />
+      </div>
+      <div className="grid-span-1">
         <Technology
-          name="October CMS"
-          bgImage="/img/technologies/octobercms.png"
+          name="ExpressJS"
+          bgImage="/img/technologies/expressjs.png"
         />
       </div>
       <div className="grid-span-1">
+        <Technology name="MySQL" bgImage="/img/technologies/mysql.png" />
+      </div>
+      <div className="grid-span-1">
         <Technology name="Docker" bgImage="/img/technologies/docker.png" />
+      </div>
+      <div className="grid-span-1">
+        <Technology name="Laravel" bgImage="/img/technologies/laravel.png" />
       </div>
     </div>
     <div className="absolute text-white inset-x-0 bottom-0 pb-10">

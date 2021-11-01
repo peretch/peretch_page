@@ -30,7 +30,7 @@ const Banner = ({ sectionName, nextSection }) => (
         </p>
         <p className="w-full">
           <span className="text-red-400 lg:text-6xl sm:text-xl  ">Love</span>
-          <span className=" font-serif font-thin italic text-4xl">
+          <span className="font-serif font-thin italic text-4xl">
             Big Dreams
           </span>
         </p>
